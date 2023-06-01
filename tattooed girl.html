@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tattooed girl</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><link rel="stylesheet">
+  <style>
+      body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  
+}
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: .2em 2em;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .2em .7em;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-size: 1.15em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(220, 120, 0);
+}
+
+.nav-bg {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(50, 50, 50);
+  transition: .45s ease-in-out;
+}
+
+.bg-hidden {
+  top: -100%;
+  opacity: 0;
+}
+
+.bg-visible {
+  top: 0;
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Brush Script MT', cursive;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: rgb(50, 50, 50);
+  background: url(https://images.unsplash.com/photo-1460013477427-b0cce3e30151?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80) no-repeat 50% 50% fixed;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: .3em;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.content-wrapper {
+  width: 80%;
+  height: 300px;
+  padding: 1em 10%;
+  font-family: 'Courier New', monospace;
+}
+
+.content-wrapper h1 {
+  margin: 0;
+  color: rgb(220, 120, 0);
+}
+
+.content-wrapper p {
+  text-indent: 1.5em;
+}
+/* header part css end here*/
+/* CSS Document */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+}
+
+#lightings {
+  bottom: -60px;
+  position: absolute;
+  width: 100%;
+}
+
+section {
+  /*border-radius*/
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+#one {
+  /*animation*/
+  -webkit-animation: one 5s ease-in-out infinite alternate;
+  -moz-animation: one 5s ease-in-out infinite alternate;
+  -ms-animation: one 5s ease-in-out infinite alternate;
+  -o-animation: one 5s ease-in-out infinite alternate;
+  animation: one 5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes one {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+@-moz-keyframes one {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+@-o-keyframes one {
+  from {
+    -o-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+
+@keyframes one {
+  from {
+    box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+
+#two {
+  width: 90%;
+  /*animation*/
+  -webkit-animation: two 4s ease-in-out infinite alternate;
+  -moz-animation: two 4s ease-in-out infinite alternate;
+  -ms-animation: two 4s ease-in-out infinite alternate;
+  -o-animation: two 4s ease-in-out infinite alternate;
+  animation: two 4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes two {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+@-moz-keyframes two {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+@-o-keyframes two {
+  from {
+    -o-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+
+@keyframes two {
+  from {
+    box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+
+#three {
+  width: 80%;
+  /*animation*/
+  -webkit-animation: three 3s ease-in-out infinite alternate;
+  -moz-animation: three 3s ease-in-out infinite alternate;
+  -ms-animation: three 3s ease-in-out infinite alternate;
+  -o-animation: three 3s ease-in-out infinite alternate;
+  animation: three 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes three {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+@-moz-keyframes three {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+@-o-keyframes three {
+  from {
+    -o-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+
+@keyframes three {
+  from {
+    box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+
+#four {
+  width: 70%;
+  /*animation*/
+  -webkit-animation: four 2s ease-in-out infinite alternate;
+  -moz-animation: four 2s ease-in-out infinite alternate;
+  -ms-animation: four 2s ease-in-out infinite alternate;
+  -o-animation: four 2s ease-in-out infinite alternate;
+  animation: four 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes four {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+@-moz-keyframes four {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+@-o-keyframes four {
+  from {
+    -o-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+
+@keyframes four {
+  from {
+    shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+
+#five {
+  width: 60%;
+  /*animation*/
+  -webkit-animation: five 1s ease-in-out infinite alternate;
+  -moz-animation: five 1s ease-in-out infinite alternate;
+  -ms-animation: five 1s ease-in-out infinite alternate;
+  -o-animation: five 1s ease-in-out infinite alternate;
+  animation: five 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes five {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+@-moz-keyframes five {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+@-o-keyframes five {
+  from {
+    -o-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+
+@keyframes five {
+  from {
+    box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <div class="nav-bg"></div>
+  <ul>
+    <li><a href="/index.html">HOME</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <h1>Tattooed girl</h1>
+</div>
+<div class="content-wrapper">
+  Note : The moment i am writing this, their is a thunderstorm all over vellore and i am listening darshan raval Ab Phirse Jab Baarish<br>
+  <br>
+  I though i will not write about this part ever but i know i have been writing line thinking about this you know as a writer i only need on incident to write forever about that and its don’t matter how good or bad that it.. <br>
+  <br>
+  Same thing happen here i call it a accident to be honest a beutiful one.
+  <br><br>
+  In the start it was normal day old online classes and all,very boring but tireing day i was talking on the call with a friend it was about dinner time i rememeber it clearly. i was on the roof and from location i can see the whole street and i saw some people walking toward the other end of the street i was still very focuesd on the call you but once they came near the house i can see all of them are 1 fatherly men and 2 boy or i can say men and one girl she was wearing a marron dress and open hair.<br><br>
+  
+  And as see came in my clear view site all i was able to say is WOW and my friend heard me and said bro what happened i saw nothing bro saw i girl in the street and he was like wow bro good for you further on talking he was like in where she is going ? i was like “like i know dummy!!!.” we both laugh but my eyes were still on her she passed my house and went ahead then something happened and they all turn back and came this side and to my holy surprise they came inside my house.. i told him my friend he was like bro what the heck i was like yeah dude what the heck but soon we talked about more thing and we forgot this thing and the call went on for more 35 minutes.<br><br>
+  
+  After finishing my call like i went to downstairs almost yelling MOM MOM WHERE ARE YOU? MOM like a very good boy and then i entered the room i see some new faces well well look now every eyes are on me and i was almost at peek of my embarrassed when every one saw me so i almost run to the kitchen where i knew mum was their now!!!<br><br>
+  
+  I went and stood next to her with a very weird face mom say and said what happend i was like nothing just give me my food that all.. with bright smile she said yeah but after they will leave then. with no words to reply with i stood silently and after a moment my little sister almost yelling but sliently you know you want yell but cant casue someone may hear you so just shhh like that and then in my ear she said “BRO THAT GIRL HAVE TATTTOOS” and i saw my mom face in reflex and she noodded in yeah she have a tattoo and all i say it HMMMM..<br><br>
+  
+  Trust me i wanted to say more than that like that is so cool i wanna see and what it is and million of thought and what not.<br><br>
+  
+  But then i didn't. i just went near the gate in stood their in krishna pose of standing like this.<br><br>
+  
+  And see her back and with hair open i can see the tattoo but not clearly casue most of her hair covers it. but when my mum came out of the kitchen she turn her head towards the gate and then i saw her eyes.<br><br>
+  
+  Those eyes was dam and those cute glass on them suits that round cubby face of her and the way she smile is way to good for me to handle that cuteness all i can see her eyes without saying any word. just looking my mind is not so clam and slient but today was different its slient so slient that it scares me how slient and clam it was almost like dead. while all this my sis said di lets go i will show the house and for god shake it was good and bad idea at same time good i can see her more i think but you know i am saying bad casue my sister direclty took her to my room and i dont know why she is a dummy and big dummy infact..<br><br>
+  
+  And as you guessed a boy room who lives their 24*7 without getting out of the room till he know he can survive even bomb is dropped outside of room ,my room was bit messy i guess now i come to think of it was way messy and dark room and  with a laptop on and coding and work things open with two other pc to work on (i am not showing off i am just use to work like that) yeah coming back to the room and they entered my room with mess room she stood their and as i rememeber now one the boy/men also came up and then we were in my roon and he was asking me question and i dont know why he was asking so many question like he is goonna give me job i mean like why dude. moving on we talked i dont remeber the talking part i am being honest i am not lieing truth me. <br><br>
+  
+  Then suddenly .....
+  
+  <br><br>To be continued
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+  <article id="wrap">
+    <article id="lightings">
+      <section id="one">
+        <section id="two">
+          <section id="three">
+            <section id="four">
+              <section id="five">
+  
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </article>
+  </article>
+</body>
+</html>

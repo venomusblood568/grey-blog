@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cursed</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><link rel="stylesheet">
+  <style>
+      body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  
+}
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: .2em 2em;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .2em .7em;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-size: 1.15em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(220, 120, 0);
+}
+
+.nav-bg {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(50, 50, 50);
+  transition: .45s ease-in-out;
+}
+
+.bg-hidden {
+  top: -100%;
+  opacity: 0;
+}
+
+.bg-visible {
+  top: 0;
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Brush Script MT', cursive;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: rgb(50, 50, 50);
+  background: url(https://images.unsplash.com/photo-1623784339206-593c0bcbb7f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1838&q=80) no-repeat 50% 50% fixed;
+  background-size: 130%;
+  overflow: hidden;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: .3em;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.content-wrapper {
+  width: 80%;
+  height: 4000px; /*add increase the height here if nedded*/
+  padding: 1em 10%;
+  font-family: 'Courier New', monospace;
+}
+
+.content-wrapper h1 {
+  margin: 0;
+  color: rgb(220, 120, 0);
+}
+
+.content-wrapper p {
+  text-indent: 1.5em;
+}
+/* header part css end here*/
+/* CSS Document */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+}
+
+#lightings {
+  bottom: -60px;
+  position: absolute;
+  width: 100%;
+}
+
+section {
+  /*border-radius*/
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+#one {
+  /*animation*/
+  -webkit-animation: one 5s ease-in-out infinite alternate;
+  -moz-animation: one 5s ease-in-out infinite alternate;
+  -ms-animation: one 5s ease-in-out infinite alternate;
+  -o-animation: one 5s ease-in-out infinite alternate;
+  animation: one 5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes one {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+@-moz-keyframes one {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+@-o-keyframes one {
+  from {
+    -o-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+
+@keyframes one {
+  from {
+    box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+
+#two {
+  width: 90%;
+  /*animation*/
+  -webkit-animation: two 4s ease-in-out infinite alternate;
+  -moz-animation: two 4s ease-in-out infinite alternate;
+  -ms-animation: two 4s ease-in-out infinite alternate;
+  -o-animation: two 4s ease-in-out infinite alternate;
+  animation: two 4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes two {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+@-moz-keyframes two {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+@-o-keyframes two {
+  from {
+    -o-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+
+@keyframes two {
+  from {
+    box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+
+#three {
+  width: 80%;
+  /*animation*/
+  -webkit-animation: three 3s ease-in-out infinite alternate;
+  -moz-animation: three 3s ease-in-out infinite alternate;
+  -ms-animation: three 3s ease-in-out infinite alternate;
+  -o-animation: three 3s ease-in-out infinite alternate;
+  animation: three 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes three {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+@-moz-keyframes three {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+@-o-keyframes three {
+  from {
+    -o-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+
+@keyframes three {
+  from {
+    box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+
+#four {
+  width: 70%;
+  /*animation*/
+  -webkit-animation: four 2s ease-in-out infinite alternate;
+  -moz-animation: four 2s ease-in-out infinite alternate;
+  -ms-animation: four 2s ease-in-out infinite alternate;
+  -o-animation: four 2s ease-in-out infinite alternate;
+  animation: four 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes four {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+@-moz-keyframes four {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+@-o-keyframes four {
+  from {
+    -o-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+
+@keyframes four {
+  from {
+    shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+
+#five {
+  width: 60%;
+  /*animation*/
+  -webkit-animation: five 1s ease-in-out infinite alternate;
+  -moz-animation: five 1s ease-in-out infinite alternate;
+  -ms-animation: five 1s ease-in-out infinite alternate;
+  -o-animation: five 1s ease-in-out infinite alternate;
+  animation: five 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes five {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+@-moz-keyframes five {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+@-o-keyframes five {
+  from {
+    -o-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+
+@keyframes five {
+  from {
+    box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <div class="nav-bg"></div>
+  <ul>
+    <li><a href="/index.html">HOME</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <h1>Cursed</h1>
+</div>
+<div class="content-wrapper">
+  Hello guys my name is Aidan crop. I live in crop rivers which are in New Zealand.
+  And Crop rivers is a place known for its cold nature and especially for its rain.
+  On a normal day when the rain will start you never know and due to its cold nature you never know when the mist will be around and you even never predict when you are going to see the sun and its sunlight but it Been over a year I have shifted here and now I can say I am kind use to but not Entirely still sometimes I do miss sun….
+  <br><br>
+  Now as I think of it I didn’t tell you about my family background didn’t I. So let me tell you crop is a big business firm a rich one to be specific but I left my city for some reason and that reason but not talk in the night time you will get to know soon enough so just stick!
+  Currently, my age is 15 I am telling you because it's necessary why you will know soon…
+  <br><br>
+  So the matter is I am cursed 🙂how you must be wondering and no doubt. and yeah you read it correctly I am cursed and now the next questions rise how exactly…so things started with my birth but I am not the first child to be born I crop family tho. If I know correctly I am the third child my parents had before me but due to some unknown reason both were dead when they got delivered but … never mind I don't know it's true or not I don't think I should say the thing I am not sure about so leave it… 
+  But as I got deliver my parents were happy infect to happy cause now finally crop family has a prince who will be leading the family name. The day I came into this world was one hell of a special day for my dad yeah off cause because of my birth and it been three years my dad company ever been in the first position but as I came in dad hit a super hit deal and made a huge amount of profit and became the leading company in country but.
+  Things never go like you want is have there are ups and downs and we all have to live with that we like it or not and that's makes no difference for any human ….so after everything dad went to meet the doctor and say thank you!!
+  But that thank you is gonna cost much more than that dad dint know !!!! 
+  <br><br>
+  When dad went to meet doctor said to dad due to some reason we don't think something is quite right so we will be keeping mother and child in observation for two days or so then we will discharge. Dad was quiet in fear and ask if something is serious or not doctor nodded in no and said it was quite all right but before discharge, we want to make sure things are all right that's all. As you know the earlier case of your wife so I want to make sure that all.
+  <br>
+  Timeless by and when the next dad came to meet and met the doctor. The doctor said sir I was quite right about the situation your child Is quite weak and we want to keep mother and son in a week of observation. And sir I also want to tell you something that makes me worry about you son so please will you care to join me in m cabin. As they know mum can hear the conversation of dad and doc but not in his cabin. I don't know what conversation dad had with the doctor he never shared that part even I asked he aid nothing it just about your Health that's all but now by the grace of God you are all healthy again and no need to be concerned dear and each time he says the different reason for that part I don't know why!!
+  <br><br>
+  But again time passed and things went down but this time down on the sixth day there was a very very big deal that was going to take place and positively dad cracked it and crop firm hit a very big profit dad was super happy and when he reached the hospital to tell this good news to mother he came to know that mum is already dead….
+  <br><br>
+  Yeah,she is dead dad went crazy and when dad asked the doctor how this happened doctor said an hour ago she was all right but in that 60 mistunes what happened he doesn't know cause if something happened in her health condition alarm sensor must be activated but since that didn’t happen so I am sure something else happened…
+  Dad was furious and asked to show the CCTV footage and since was a hotshot and 
+  we’ll know no one dares to stop him and showed him but what they saw on screen they cant believe….
+  <br><br>
+  Dad never shares what he saw on the screen it's like seeing a movie with missing pieces and that makes me anxious but to be honest, whenever I forced him to say he say son you can't handle what I saw when the time will come I will show you my self I have that footage saved for you dear so just wait till then.
+  And each time same answer so now I never force them. So back to the story after seeing that footage dad says then when the doctor checked her body they found nothing. It was normal they found nothing suspicious and the report Was also crystal clear.
+  <br><br>
+  Dad was so confused about what he just saw and he was so confused about what happened he said to the doctor to don't let anyone know what happened ed here and the doctor also dad said to give them the footage and without even asking doctor said to guard to hand over the footage as instruction he did.
+  <br><br>
+  After completing all the paperwork dad Brough me home and now in the home there were three people me, dad, and my grandmother… things were going fine but not for the long first week was very good but after that suddenly grandmother health started to decrease and as leading firm things were hectic for dad so he was busy most of the time and he uses to return home around midnight.
+  <br><br>
+  As my grandmother's health was declining she was really worried about me so. She started to force my dad to get married firstly dad simply denied but soon grandma make him understand the situation and for my better sake dad got married once again…
+  <br><br>
+  Soon my dad was marrying a lady and to be honest, I do think my new mother bring some good charm to home and in our lives because as she came things were back to normal or coming back to normal and more than anting she loved me as her son… in fact, she loved me more than anything and no can deny it… thing was going good like really good but you know time is bitch she can change whenever she wants and you never know what will be happening next you can just hope it will be best but that best never happened in my life as a matter of fact 
+  <br><br>
+  In-home when you have a child time flies by and you don't know when he or she grows up so was I finally it was time to kindergarten and as I went to my kindergarten I made my first friend his and was kale his name was clear in mind head till today, not beeches he was my first friend but because he is not anymore and when this happened I was with him.
+  <BR><BR>  
+  we were five I remember we were in his garden playing hide and seek and I was supposed to find him and as I remember he was hiding behind the bushes I can see him as I went near bushed I don’t know what happened but I became unconscious and fell to the ground and when I woke up I was in my bed… And my new mum was sitting near me tense face. As I woke up he hugged me tightly and I was dam confused so I asked what happened and she said “nothing dear you just too tired and faint nothing else you are all right!!”  But mum I don't feel like was tired she said with a smile “it's ok dear happened ” then I asked where is kale mum she said you fainted so I Brough you home dear!!! 
+  <br><br>
+  The next day when I went to kindergarten kale didn’t appear I waited for him he was my only friend, so simply I use to wait for him to arrive I asked the teacher why he didn’t appear they said they don't know Day after day I asked teacher same question after a week or so they said he left… 
+  When I came to know I cried and when I came home crying my mum was scared and asked what happened dear who dare to make you my prince I told said mum kale left the kindergartens. She said she will call and say to come back and when I slept in her arms I didn’t know and when I woke up heard something
+  <br><br>
+  Something that I was not supposed to hear I heard my cook aunty and another cleaning aunty was talking about how kale was found dead while playing and he even doesn't know the cause of that and how lucky I am that I was also near him but didn’t see anything and thank god I don't know anything yet cause I everyone know I only had a one friends and while I only know this fact he will be not coming was crying this hard and if I came to know that he has gone for forever what condition I will be in….
+  <br><br>
+  For a while, I didn’t know what happened but then I came down to my mum and said to her mum I know kale is gone…she was amazed and asked where I listen I said I know mum don't lie to me and she hugged me and said don’t cry son you are my prince charming. And the prince doesn’t cry. I smiley nodded and said mum I am hungry and she said come sit I will cook some for you 
+  I nodded and asked if mum can ask grandmother to live with us.
+  <br><br>
+  As I asked mum said why not dear and soon enough my grandmother came and she and I use to live in one room and as time passed by and I was not 10 years old and my grandmother and I came quite close I didn’t have many friends but my grandmother was one of my best friend she was more than friends like teacher, mother, cook and many more but again my dam curse activates and this time it was my grandmother who was going to heaven one fine evening she asked me can you brings some water from downstairs and I said why not and I went running and picked up the bottle and bring back to my room and as I came I saw my grandmother falling on ground…
+  <br><br>
+  Seeing that I rushed while screening and hearing me screaming mom and maid aunty rushed to my room and as they checked my grandmother and they realized that grandma left me us all alone… I couldn’t understand what was happening in my life…
+  <br><br>
+  After that many incidents took place in all alone incidents nothing happed to me not a single scratch like after few months one friend name ray was running behind me and then from nowhere she jumped from stairs and fell on the ground hitting her head leading to direct death then after two years one day while coming back from park my driver uncle and I had a great accident and in that, not a single scratch happened to me but driver uncle was spot dead….
+  After all these incidents I was dam sure that I am cursed….
+  <br><br>
+  So I decided that I will be going to somewhere where this curse cannot harm my family’s in asked my dad… dad I wanna go to the crop and he said why I said cause want to study abroad he aside but why their I said please dad and finally after 2 years of this and that now I am 15 years old and I am going to be in crop river all alone and try to not to see any more death just can't take it anymore …..
+  <br><br>
+  Now I am in crop rivers finally and hope if I stay alone this curse will not kill any more than it already is. As I asked my dad about my education and he help me to get admission to FIN HIGH one of the best schools from where I can graduate and hope to live a life without any death…
+  <br><br>
+  The FIRST day at crop rivers when I landed at the airport it was already 10 pm, as I came out of the airport a guy was holding aboard and in big capital latter its was written ADIEN CROP 
+  As I saw him I was a bit nervous because I don't want him to be in any kind of danger cause of me but since I was new to this dam area I can't help myself and go on my own so I quietly went near him and said let go as I went and said he knew I was Aidan. He opens the gate I went inside and sat quietly without even uttering a word…
+  <br><br>
+  Soon he hit the road as I wanted this area quite abounds and rural and quite silent perfect. and as I demand dad so give somewhere where there were no humans and quiet so he said fine and brought a mansion in outskirts and mainly in dense forest…
+  I was a bit scared, to be honest, but then I realized that it's quite necessary for the people I know and left especially my dad and mom and it will be the last thing I want I ever want something to happen to them 
+  <br><br>
+  Thought of losing them and my cells denied to work from what they were supposed to be doing and my a giving me creepy chills that went through my spin and leaving a wobbly sense behind and with a one thought my whole body num but I repose and somehow managed to open window and as I open my window a second hit of chill hit my body but this time It was level not because of the cold weather I asked the driver “so what’s is the current temperature”
+  And in a firm voice, he said I think it must be around 7 or 8-degree celsius wait, master, I will check and tell you and without saying anything in response I nodded, and as I nodded he looked in his phone and Said yes it 7 degrees and it's pretty late master want to eat anything I have a bar of chocolate and again without uttering a word again I nodded in no and as I nodded in NO he again focused on the road and I went and start looking outside and as we were speeding my whole body was going numb and it reached a point where I cant feel my very own face and my skin went to pale and went a bit red too as cheery on top. I was watching out of the window trying to think something but this dam cold I can’t think anything and it was quite weird why weird because I was in a position I was enjoying the chilly winds that were hitting my face and upper part of my body but on another hand, it was too cold for me to handle but I want in a contradictory position but sometimes it's best to not make any decision and let it be as you want so I did the same I head my out the window and when I slept I didn’t know…
+  <br><br>
+  I came out of sleep by a sudden voice of tires squeak and hard break, making my neck snap. And I was about to fall and hit my head in front seat rester but my seatbelt saved me and I was got a hard jerk and that hurts but not that bad but uncle hit his head and a hit his head on string wheel. As we stooped he asked me “master are you all right” again I simply nodded “yes”
+  “I am so sorry master I don't know out of nowhere a reindeer came in and I had to put a hand brake otherwise things can be bad!!”
+  <br><br>
+  In that reposes, I don't know from where a response came “it's ok I am sure nothing can happen to me you should be careful about yourself” 
+  I even don't know why I even said that but nothing can be said once you aid something so…
+  I just nodded and we moved on to our path and soon enough I cam see mansions but only walls and these were pretty high as I will say and that's Make safe from the animal that around the jungle and there are not many wolves but there are as I read on Internet so that makes me quires even more so asked driver hey “what type of animals are here in the jungle? ”
+  “Master there are most fallow deers and it been while we came to know about any wolves but there are but I am not sure cause I haven’t seen in years not even their trails so I Can’t tell about them but there are wild rabbits and other small creature but they are harmless.”
+  <br><br>
+  As we were talking I noticed now we had left the main road and taken the path of trail that trail was not short nor too massive just cars can go in out and it was quite hidden with bushes and trees no one can notice till search for it intensionally .you cant came across it and the chance of finding it random it's about bro percentage and major parts of both side were coved with dense shrub and woods and mainly Araucaria arcane its one of the most common tress you are going to find here in crop river and due to its size and dense lab its make even harder for sunlight to fall on the ground and the climate here changed means as we took the trails it's the cold get even colder now my every hair as standing cause of the chilling sense so I was forced to up my window once again… slowly following the trails now we were now standing in front of the massive wall that is around my whole mansion as I guess and they are bigger than I thought as we were going near the walls its was completely dark as black only mere light was their which was coming form the reflections of the headlight of car itself other than nothing it was was like pitch black as head near the gate slowly we stopped in front the main gate and honked two times suddenly all the light around the wall lit up and the trail which was rich black right now was well lit with light post but if you ask me its quite old fashioned and its was looking like a old times movies but its quite royal in feel. And as we went near the wall I saw a board saying private property of CROPs 
+  STAY AWAY… in bold letter and that was quite weird if you ask. Me but anyway after that I went on and started analyzing the surrounding area as I was doing so suddenly with the large “thud” sound of unlocking of lock and behind that, with a “squeaky” sound that huge mansion gate opened and in front of me there was a massive mansion if I say quite big for a single 15 years old boy to be living here in woods but anyway now what can be done but one the other hand I am not complying at all-cause more or less I like it so car moved once gain and slowly with the speed of waking around 5 km per hour. And slowly approaching we approached the driver way of the mansion and as we stopped the main gate of the mansion opened but this time without any kind of noise it was like a feather falling with any noise and a lady, like age of my mother opened the gate with a gentle firm smile and she was wearing a black uniform and as she opened the gate a  sweet swift warm France of breeze came outside from the gate and by the fragrance of it, its feel like she was baking something its like cake or something but as my gut feeling says it was probably the cake cause sometimes my grandma use to make the handmade cake at home and its use to smell just like this more or less depending on the favoring of the cake but after she died its been long I smelled something like this not because my mom doesn't cook but it just that something special was in my grandma's hands but once again I was smelling that as I was enjoying the smell and driver opened my car gate and I finally put my first step in my new life.
+  <br><br>
+  As I finally came out I was looking here and there to see how this is looking and see what’s going to catch my eyes but except darkness and mere light glowing I can't see anything but as I looked up in of the side building there was tower as a watchtower or something I was not very sure of in one end and it was quite dark but except one window there was light and surprising their was someone and standing in front of the window but the curtain was down yet bit transparent so I can only see shadow nothing more than that….but something was different about the shadow but ignoring it anyway I make very first eyes contact with the lady standing in front of me and walked in not like a kid or child but with a total mindset of mature adult-like a kind walking in the place or fortress and I put 
+  <br><br>
+  As went in it was a massive mansion but creepy at the same time cause of the way it was made it was like an old-time royal mansion with a massive garden and pathway in front of the mansion but that's made. No difference in the experience of the darkness that I was carrying within me and to be honest it was like his for a long time as I remember now… and for that darkness it was heaven or, I can say in devil'swords it was hell heaven…
+  <br><br>
+  I was quite lost in seeing my new surrounding but I came out of my thought with a swish cause of one topic that make my ear up….
+  “Can you repeat what you just said ?” I asked I ad serious face….
+  “Master here for this woods there is a legend that goes way back I don’t know it's true or not but the people truly believe and I don’t why I believe that the legend is true!!!”
+  “Tell me more about it,” I said with a  serious face but deep inside I was quite anxious and excited to know more about this topic and this talk happened to peeked my curiosity …..
+  Before she could continue anything a ring sound came I turn my head to look from it came and it was  could-looking tower clock showing the time of  12 o clock !!!was surprising side to see the time because it was pretty late but I cant feel the darkness that around the home or me now have grown its part inside Me and my identity and we had never been, apart to be honest but the problem was I was not able to see it coming don't want to see it to come to both means same I guess but when you look at a fundamental level they are quite different in their ways and the person who never experienced both can Never say who is who and what does even mean but you know one who has been in their know what it is about !!!
+  <br><br>
+  Again second ring sound came and I came out of my thought it was 5 past 12… master we will be taking soon but first freshen a bit and I will take out dinner we will talk on dinner if you don't mind.
+  With a mere nod of the head or you say I “hmmm”. Follow me, master, I will you your room is…
+  And I as per said I did follow her soon passing down to the passage that feels like peeking and sneaking upon me. You know their is a glance I can feel on my back I can feel it clearly. But as I turn their is nothing but empty passages. But feeling like is pretty normal for me now to be honest since when I realised I am cursed. I can feel like they're is a pair of eyes that can see me but I know for sure they are not the pair of the angle they are devil eyes for sure. Sometimes in night that do hunt me but now I can they are quite normal for me. But still it's weird when you know someone is watching you. While being lost in thought I was finally standing in front of my room door which door is already open  by the made.
+  <br><br>
+  TO BE CONTINUED........
+
+
+
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+  <article id="wrap">
+    <article id="lightings">
+      <section id="one">
+        <section id="two">
+          <section id="three">
+            <section id="four">
+              <section id="five">
+  
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </article>
+  </article>
+</body>
+</html>

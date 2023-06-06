@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Coming Soon</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><link rel="stylesheet">
+  <style>
+      body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  
+}
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: .2em 2em;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .2em .7em;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-size: 1.15em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(220, 120, 0);
+}
+
+.nav-bg {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(50, 50, 50);
+  transition: .45s ease-in-out;
+}
+
+.bg-hidden {
+  top: -100%;
+  opacity: 0;
+}
+
+.bg-visible {
+  top: 0;
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Brush Script MT', cursive;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: rgb(50, 50, 50);
+  background: url(https://doninmass.files.wordpress.com/2013/04/walking-in-rain-painting-wallpaper-hd.jpg) no-repeat 50% 50% fixed;
+  background-size: 130%;
+  overflow: hidden;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: .3em;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.content-wrapper {
+  width: 80%;
+  height: 300px;
+  padding: 1em 10%;
+  font-family: 'Courier New', monospace;
+}
+
+.content-wrapper h1 {
+  margin: 0;
+  color: rgb(220, 120, 0);
+}
+
+.content-wrapper p {
+  text-indent: 1.5em;
+}
+/* header part css end here*/
+/* CSS Document */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+}
+
+#lightings {
+  bottom: -60px;
+  position: absolute;
+  width: 100%;
+}
+
+section {
+  /*border-radius*/
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+#one {
+  /*animation*/
+  -webkit-animation: one 5s ease-in-out infinite alternate;
+  -moz-animation: one 5s ease-in-out infinite alternate;
+  -ms-animation: one 5s ease-in-out infinite alternate;
+  -o-animation: one 5s ease-in-out infinite alternate;
+  animation: one 5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes one {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+@-moz-keyframes one {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+@-o-keyframes one {
+  from {
+    -o-box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+
+@keyframes one {
+  from {
+    box-shadow: 0 0 250px 20px #473c78;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #f72a3b;
+  }
+}
+
+#two {
+  width: 90%;
+  /*animation*/
+  -webkit-animation: two 4s ease-in-out infinite alternate;
+  -moz-animation: two 4s ease-in-out infinite alternate;
+  -ms-animation: two 4s ease-in-out infinite alternate;
+  -o-animation: two 4s ease-in-out infinite alternate;
+  animation: two 4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes two {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+@-moz-keyframes two {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+@-o-keyframes two {
+  from {
+    -o-box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+
+@keyframes two {
+  from {
+    box-shadow: 0 0 250px 20px #18c499;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #d8f05e;
+  }
+}
+
+#three {
+  width: 80%;
+  /*animation*/
+  -webkit-animation: three 3s ease-in-out infinite alternate;
+  -moz-animation: three 3s ease-in-out infinite alternate;
+  -ms-animation: three 3s ease-in-out infinite alternate;
+  -o-animation: three 3s ease-in-out infinite alternate;
+  animation: three 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes three {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+@-moz-keyframes three {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+@-o-keyframes three {
+  from {
+    -o-box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+
+@keyframes three {
+  from {
+    box-shadow: 0 0 250px 20px #ffdd00;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #3e33ff;
+  }
+}
+
+#four {
+  width: 70%;
+  /*animation*/
+  -webkit-animation: four 2s ease-in-out infinite alternate;
+  -moz-animation: four 2s ease-in-out infinite alternate;
+  -ms-animation: four 2s ease-in-out infinite alternate;
+  -o-animation: four 2s ease-in-out infinite alternate;
+  animation: four 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes four {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+@-moz-keyframes four {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+@-o-keyframes four {
+  from {
+    -o-box-shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+
+@keyframes four {
+  from {
+    shadow: 0 0 250px 20px #781848;
+  }
+
+  to {
+    shadow: 0 0 100px 15px #f2bbe9;
+  }
+}
+
+#five {
+  width: 60%;
+  /*animation*/
+  -webkit-animation: five 1s ease-in-out infinite alternate;
+  -moz-animation: five 1s ease-in-out infinite alternate;
+  -ms-animation: five 1s ease-in-out infinite alternate;
+  -o-animation: five 1s ease-in-out infinite alternate;
+  animation: five 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes five {
+  from {
+    -webkit-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+@-moz-keyframes five {
+  from {
+    -moz-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -moz-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+@-o-keyframes five {
+  from {
+    -o-box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    -o-box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+
+@keyframes five {
+  from {
+    box-shadow: 0 0 250px 20px #42f2a1;
+  }
+
+  to {
+    box-shadow: 0 0 100px 15px #f4f6ad;
+  }
+}
+
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <div class="nav-bg"></div>
+  <ul>
+    <li><a href="/index.html">HOME</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <h1>COMING SOON</h1>
+</div>
+<div class="content-wrapper">
+  Whispered winds hint of tales untold,<br>
+  Coming soon, a story yet to unfold.
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+  <article id="wrap">
+    <article id="lightings">
+      <section id="one">
+        <section id="two">
+          <section id="three">
+            <section id="four">
+              <section id="five">
+  
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </article>
+  </article>
+</body>
+</html>
